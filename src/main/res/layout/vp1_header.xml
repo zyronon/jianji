@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/income"
+                style="@style/vp1_header_text"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="本月收入：" />
+
+            <TextView
+                android:id="@+id/income_sum"
+                style="@style/vp1_header_number"
+                android:layout_toRightOf="@+id/income"
+                android:text="" />
+
+            <TextView
+                style="@style/vp1_header_text"
+                android:layout_toRightOf="@+id/income_sum"
+                android:text="元" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/outlay"
+                style="@style/vp1_header_text"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="本月支出：" />
+
+            <TextView
+                android:id="@+id/outlay_sum"
+                style="@style/vp1_header_number"
+                android:layout_toRightOf="@+id/outlay"
+                android:text="" />
+
+            <TextView
+                style="@style/vp1_header_text"
+                android:layout_toRightOf="@+id/outlay_sum"
+                android:text="元" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_remainder_sum"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/remainder"
+                style="@style/vp1_header_text"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="账户余额：" />
+
+            <TextView
+                android:background="@null"
+                android:id="@+id/remainder_sum"
+                style="@style/vp1_header_number"
+                android:layout_toRightOf="@+id/remainder"
+                android:text="" />
+
+            <TextView
+                style="@style/vp1_header_text"
+                android:layout_toRightOf="@+id/remainder_sum"
+                android:text="元" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:id="@+id/textView11"
+                style="@style/vp1_header_text"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="元" />
+            <TextView
+                android:id="@+id/today_income_sum"
+                style="@style/vp1_header_number"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:layout_toLeftOf="@+id/textView11"
+                android:text="" />
+
+            <TextView
+                style="@style/vp1_header_text"
+                android:text="今日收入："
+                android:layout_toLeftOf="@id/today_income_sum"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView111"
+                android:textSize="20sp"
+                style="@style/vp1_header_text"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginRight="20dp"
+                android:text="元" />
+
+            <TextView
+                android:id="@+id/today_outday_sum"
+                style="@style/vp1_header_number"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:layout_toLeftOf="@+id/textView111"
+                android:text=""  />
+
+            <TextView
+                style="@style/vp1_header_text"
+                android:text="今日支出："
+                android:layout_toLeftOf="@id/today_outday_sum"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    style="@style/LinearLayout.MatchwhV">
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="请输入密码"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <com.andrognito.patternlockview.PatternLockView
+        android:layout_marginTop="20dp"
+        android:id="@+id/l"
+        app:aspectRatio="square"
+        app:aspectRatioEnabled="true"
+        app:correctStateColor="@color/right"
+        app:dotNormalSize="12dp"
+        app:dotSelectedSize="24dp"
+        app:wrongStateColor="@color/wrong"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/btn_cancel_pwd"
+        android:layout_marginBottom="20dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:text="取消密码"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

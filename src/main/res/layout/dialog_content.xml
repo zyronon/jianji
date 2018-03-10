@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/grayl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="金额：" />
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/dialog_et_money"
+            android:textSize="16sp"
+            android:textColor="@color/grayl"
+            android:layout_width="80dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/grayl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="元" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/grayl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="时间：" />
+        <TextView
+            android:id="@+id/dialog_tv_day"
+            android:textSize="16sp"
+            android:textColor="@color/grayl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="13:45:00" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/dialog_tv_minute"
+            android:textSize="16sp"
+            android:textColor="@color/grayl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="13:45:00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/grayl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="类别：" />
+
+        <Spinner
+            android:id="@+id/dialog_vp_sp_type"
+            android:textSize="16sp"
+            android:textColor="@color/grayl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="早晚午餐" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/grayl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="方式：" />
+
+        <Spinner
+            android:id="@+id/dialog_vp_sp_from"
+            android:textSize="16sp"
+            android:textColor="@color/grayl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="早晚午餐" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/grayl"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="备注：" />
+
+        <EditText
+            android:singleLine="false"
+            android:inputType="textMultiLine"
+            android:id="@+id/dialog_et_comment"
+            android:textSize="16sp"
+            android:textColor="@color/grayl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

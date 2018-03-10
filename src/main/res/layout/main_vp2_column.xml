@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <RadioGroup
+            android:id="@+id/rg_all"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:layout_marginLeft="20dp"
+                android:id="@+id/gb_out"
+                android:checked="true"
+                android:textColor="@color/grayl"
+                android:textSize="16sp"
+                android:text="支出"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/gb_out"
+                android:id="@+id/gb_in"
+                android:textColor="@color/grayl"
+                android:textSize="16sp"
+                android:text="收入"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/gb_in"
+                android:id="@+id/gb_all"
+                android:textColor="@color/grayl"
+                android:textSize="16sp"
+                android:text="合并"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+        <Spinner
+            android:id="@+id/sp_select"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+    <lecho.lib.hellocharts.view.ColumnChartView
+        android:id="@+id/column_chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp" />
+
+</LinearLayout>
